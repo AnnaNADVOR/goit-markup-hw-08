@@ -1,0 +1,124 @@
+.form {
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+
+    color: var(--title-text-color);
+  }
+
+  &__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: black;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .input:focus-within > &,
+  .input:hover > & {
+    fill: var(--accent-color);
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.input {
+  position: relative;
+}
+
+.form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: var(--btn-border-radius);
+  padding: 12px;
+  padding-left: 42px;
+  width: 100%;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .input:focus-within > &,
+  .input:hover > & {
+    border-color: var(--accent-color);
+  }
+}
+
+.form__input-textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.icon-check {
+  width: 16px;
+  height: 15px;
+}
+
+.check {
+  opacity: 0;
+
+  .checkbox:checked + .icon-check & {
+    opacity: 1;
+    background-color: #188ce8;
+  }
+}
+
+.uncheck {
+  opacity: 1;
+
+  .checkbox:checked + .icon-check & {
+    opacity: 0;
+  }
+}
+
+.agree-label {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.agree-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-color);
+}
