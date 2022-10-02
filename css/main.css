@@ -432,12 +432,7 @@ body {
   background-color: var(--accent-bg-color);
 }
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
 }
 .footer__title {
   display: block;
@@ -630,8 +625,8 @@ body {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--accent-color);
 }
 .footer .logo {
@@ -644,8 +639,6 @@ body {
 .studio {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
   color: var(--primary-black-color);
   display: inline-block;
 }
@@ -689,14 +682,16 @@ body {
 }
 
 .address {
+  margin: 0px auto 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  text-align: center;
   width: 231px;
 }
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address__link {
@@ -713,7 +708,7 @@ body {
 }
 
 .socials {
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 .socials__icon {
   width: 20px;
@@ -785,8 +780,8 @@ body {
 
 .subscribe-form__mail {
   padding: 15px 16px;
-  margin-right: 10px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   background-color: inherit;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
