@@ -2,12 +2,13 @@
 @import './utils/vars';
 @import './utils/visually-hidden';
 @import './utils/is-hidden';
+@import './utils/mixin';
 
 //base styles
 @import './base/reset';
 @import './base/base';
 @import './base/container';
-@import './base/section';
+@import './base/section-title';
 
 //layout styles
 @import './layout/header';
