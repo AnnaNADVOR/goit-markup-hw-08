@@ -30,8 +30,12 @@
   }
 
   &--hero {
-    min-width: 216px;
-  }
+min-width: 200px;
+@media screen and (min-width:1200px) {
+  min-width: 216px;
+}
+  
+}
 
   &--form {
     display: block;
