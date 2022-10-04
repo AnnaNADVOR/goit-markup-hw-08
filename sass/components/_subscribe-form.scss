@@ -12,15 +12,17 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
-}
-  // &_field {
-  //   // @media screen and (max-width: 1199px) {
-  //   //   display: flex;
-  //   //   align-items: center;
-  //   //   justify-content: center;
-  //   // }
-  // }
 
+  &__field {
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+   
+  }
+}
   .subscribe-form__mail {
     padding: 15px 16px;
     width: 100%;
@@ -41,6 +43,8 @@
     &:focus {
       border-color: var(--accent-color);
     }
+
+ 
 
     @media screen and (min-width: 1200px) {
       margin-right: 10px;

@@ -5,13 +5,27 @@
 
   &__container {
     text-align: center;
+}
 
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      text-align: left;
-      align-items: baseline;
-    }
+&__nav { 
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  margin: 0 auto 60px;
   }
+  
+}
+
+    // @media screen and (min-width: 1200px) {
+    //   display: flex;
+    //   text-align: left;
+    //   align-items: baseline;
+    // }
+  
+
+
 
    &__title {
     display: block;
@@ -21,4 +35,6 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
+
+   
 }
