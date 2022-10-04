@@ -1,17 +1,21 @@
 .address {
-
   margin: 0px auto 60px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  text-align: center;
-
   width: 231px;
 
+  @media screen and (min-width:1200px) {
+   margin-bottom: 0;
+  }
+
   &__item:not(:last-child) {
-    margin-bottom: 8px;
-    // margin-bottom: 9px;
+    margin-bottom: 9px;
+
+    @media screen and (min-width:1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 

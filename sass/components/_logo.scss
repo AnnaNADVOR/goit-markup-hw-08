@@ -3,13 +3,15 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
-  // font-size: 26px;
-  // line-height: 1.2;
   color: var(--accent-color);
+
+  @media screen and (min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 
   .footer & {
     display: inline-flex;
-    // align-items: center;
     margin-bottom: 20px;
   }
 }
@@ -17,12 +19,13 @@
 .studio {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  
-  // font-size: 26px;
-  // line-height: 1.2;
   color: var(--primary-black-color);
   display: inline-block;
 
+  @media screen and (min-width:1200px) {
+      font-size: 26px;
+      line-height: 1.2;
+    }
   .footer & {
     color: var(--primary-white-color);
   }

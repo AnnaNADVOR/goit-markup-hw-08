@@ -434,6 +434,17 @@ body {
 .footer__container {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 .footer__title {
   display: block;
   color: var(--primary-white-color);
@@ -629,6 +640,12 @@ body {
   line-height: 1.17;
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
 .footer .logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -641,6 +658,12 @@ body {
   font-weight: 700;
   color: var(--primary-black-color);
   display: inline-block;
+}
+@media screen and (min-width: 1200px) {
+  .studio {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 .footer .studio {
   color: var(--primary-white-color);
@@ -687,11 +710,20 @@ body {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  text-align: center;
   width: 231px;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
 .address__item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -709,6 +741,11 @@ body {
 
 .socials {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .socials {
+    margin-left: auto;
+  }
 }
 .socials__icon {
   width: 20px;
@@ -755,8 +792,10 @@ body {
   color: var(--primary-white-color);
 }
 
-.subscribe-form {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    margin-left: auto;
+  }
 }
 .subscribe-form__title {
   display: block;
@@ -766,22 +805,11 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.subscribe-form_field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 
 .subscribe-form__mail {
   padding: 15px 16px;
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
   background-color: inherit;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
@@ -812,6 +840,13 @@ body {
 }
 .subscribe-form__mail:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__mail {
+    margin-right: 10px;
+    margin-bottom: 0px;
+    width: 358px;
+  }
 }
 
 .modal {

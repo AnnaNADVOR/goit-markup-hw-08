@@ -1,6 +1,11 @@
 .socials {
-  // margin-left: 70px;
+   
 margin-bottom: 60px;
+
+@media screen and (min-width:1200px) {
+  margin-left: auto;
+}
+
   &__icon {
     width: 20px;
     height: 20px;
