@@ -5,6 +5,13 @@
 
   &__container {
     text-align: center;
+
+@media screen and (min-width: 1200px) {
+  text-align: left;
+  display: flex;
+  align-items: baseline;
+}
+
 }
 
 &__nav { 
@@ -15,6 +22,10 @@
     align-items: baseline;
   margin: 0 auto 60px;
   }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
   
 }
 

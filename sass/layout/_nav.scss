@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   align-items: center;
+  margin-left: 93px;
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -9,7 +10,7 @@
 
 .nav__list {
   display: flex;
-  margin-left: 93px;
+ 
 
   & .current {
     position: relative;
