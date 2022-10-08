@@ -1,3 +1,11 @@
+.portfolio { 
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+      @include section(94px, 94px);
+    }
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
@@ -15,7 +23,7 @@
   &__item {
     margin-right: 30px;
     margin-bottom: 30px;
-    width: 370px;
+    width: 370px; 
   }
 
   &__title {

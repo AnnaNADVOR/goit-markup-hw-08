@@ -1,6 +1,10 @@
 .clients {
   @include section;
 
+  @media screen and (min-width: 1200px) {
+      @include section(94px, 94px);
+    }
+
   &__list {
     display: flex;
     justify-content: center;
