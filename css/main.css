@@ -326,6 +326,11 @@ body {
   padding-top: 0px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .specialty {
+    display: none;
+  }
+}
 .specialty__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,7 +991,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 95%;
+  min-width: 450px;
   padding: 40px;
   background-color: var(--primary-bg-color);
   border-radius: var(--btn-border-radius);
@@ -997,9 +1002,10 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 460px) {
   .modal {
-    min-width: 450px;
+    min-width: 95%;
+    padding: 30px;
   }
 }
 @media screen and (min-width: 1200px) {

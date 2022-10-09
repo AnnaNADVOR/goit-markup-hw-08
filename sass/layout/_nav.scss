@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left:93px;
+  margin-left: 93px;
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -10,16 +10,13 @@
 }
 
 .nav__item {
-   @media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
-   
-
 
 .nav__list {
   display: flex;
- 
 
   & .current {
     position: relative;

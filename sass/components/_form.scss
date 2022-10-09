@@ -107,7 +107,6 @@
 .agree-label {
   font-size: 12px;
 
-  
   line-height: calc(24 / 14);
 
   display: flex;
@@ -117,11 +116,9 @@
 
   margin-bottom: 30px;
   margin-top: 20px;
-  
 
-
-  @media screen and (min-width:1200px) {
-   font-size: 14px; 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 

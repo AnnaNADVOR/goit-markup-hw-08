@@ -7,21 +7,19 @@
   width: 231px;
 
   @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
-    
-  @media screen and (min-width:1200px) {
-   margin-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 
   &__item:not(:last-child) {
     margin-bottom: 9px;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 9px;
     }
-
-        
   }
 }
 
