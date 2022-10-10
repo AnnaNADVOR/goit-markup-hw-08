@@ -8,22 +8,42 @@
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
   }
+
+     @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+     }
 }
 
 .product {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+
+@media screen and (min-width: 1200px) {
+    gap: 32px 30px;
+  }
 
   &__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 370px;
+    // margin-right: 30px;
+    // margin-bottom: 30px;
+    width:100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+      }
+
+            @media screen and (min-width: 1200px) {
+              flex-basis: calc((100% - 60px) / 3);
+            }
   }
 
   &__title {
