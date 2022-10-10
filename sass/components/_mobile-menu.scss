@@ -48,31 +48,28 @@
 .mobile-menu {
   margin-bottom: auto;
 
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+    letter-spacing: 0.02em;
 
-&__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  color: var(--title-text-color);
-  letter-spacing: 0.02em;
+    &.current {
+      color: var(--accent-color);
+    }
 
-  &.current {
-    color: var(--accent-color);
-  }
-
-  &:focus {
-    color: var(--accent-color);
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
-}
-
 
 .mobile-toggle {
   position: absolute;
   top: 20px;
   right: 25px;
 }
-
 
 .mobile-menu__item:not(:last-child),
 .mobile-contacts__item:not(:last-child) {

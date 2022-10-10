@@ -18,9 +18,9 @@
     margin-bottom: 30px;
   }
 
-     @media screen and (min-width: 1200px) {
-            margin-bottom: 50px;
-     }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .product {
@@ -28,22 +28,20 @@
   flex-wrap: wrap;
   gap: 30px;
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     gap: 32px 30px;
   }
 
   &__item {
-    // margin-right: 30px;
-    // margin-bottom: 30px;
-    width:100%;
+    width: 100%;
 
     @media screen and (min-width: 768px) {
-        flex-basis: calc((100% - 30px) / 2);
-      }
+      flex-basis: calc((100% - 30px) / 2);
+    }
 
-            @media screen and (min-width: 1200px) {
-              flex-basis: calc((100% - 60px) / 3);
-            }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
   }
 
   &__title {

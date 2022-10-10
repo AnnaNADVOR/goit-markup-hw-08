@@ -1,9 +1,9 @@
 .specialty {
   @include section(0px, 94px);
 
-    @media screen and (max-width: 1199px) {
-        display: none;
-      }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   &__list {
     display: flex;
